@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+	<!-- Font Awesome -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+
+	<!-- Google Font -->
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap" rel="stylesheet">
+
+	<!-------->
+
+	<style>
+		* {
+			margin: 0;
+			padding: 0;
+			-webkit-box-sizing: border-box;
+			box-sizing: border-box;
+		}
+
+
+		.navMenu {
+			font-family: 'Inter', sans-serif;
+			padding: 8px;
+			text-align: center;
+			margin: 7px auto;
+			width: fit-content;
+		}
+
+		.navMenu a {
+			color: #0B0E2E;
+			text-decoration: none;
+			text-transform: uppercase;
+			display: inline-block;
+			padding: 6px;
+		}
+
+		.background {
+			background-color: #F5F5F5;
+		}
+
+		.border {
+			border: 1px solid #0B0E2E;
+
+		}
+
+		.navMenu a:hover {
+
+			color: #FEDDAC;
+		}
+	</style>
+</head>
+
+<body>
+
+	<nav class="navMenu  border background">
+		<a id="home" onclick="navigate(this.id)" href="#"> <i class="fa-duotone fa-house"></i></i> Home</a>
+		<a id="properties" onclick="navigate(this.id)" href="#"> <i class="fa-duotone fa-house-user"></i> Properties</a>
+		<a id="clients" onclick="navigate(this.id)" href="#"> <i class="fa-duotone fa-user"></i> Clients</a>
+		<a id="sales" onclick="navigate(this.id)" href="#"> <i class="fa-duotone fa-wand-magic-sparkles"></i> Sales</a>
+		<a id="analytics" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-filter"></i> Analytics</a>
+		<a id="marketing" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-bolt"></i> Marketing</a>
+		<a id="operations" onclick="navigate(this.id)" href="#"> <i class="fa-duotone fa-pen-to-square"></i> Operations</a>
+		<a id="knowledge-hub" onclick="navigate(this.id)" href="#"> <i class="fa-duotone fa-bookmark"></i> Knowledge Hub</a>
+
+
+	</nav>
+
+
+	<script>
+
+		let direction = "vertical";
+		if (direction === "vertical") {
+			document.head.insertAdjacentHTML("beforeend", `<style>.navMenu a {display: block; text-align:left; margin:7px} i{width:15px; margin-right:5px} .navMenu{margin:3px}</style>`)
+		}
+
+
+		function navigate(id) {
+
+			if (id == 'home')
+				window.open("https://www.notion.so/symbolrealty/Symbol-Realty-Dashboard-6bc96a24b85f4298be8327d2ec4b9292?pvs=4", '_blank').focus();
+			else if (id == "properties")
+				window.open("https://www.notion.so/symbolrealty/Properties-59a16c4fcfa441579fa4d76e372c35b4?pvs=4", '_blank').focus();
+			else if (id == "clients")
+				window.open("https://www.notion.so/symbolrealty/Clients-57b5535027584da688b298a1684e125d?pvs=4", '_blank').focus();
+			else if (id == "sales")
+				window.open("https://www.notion.so/symbolrealty/Sales-5cc538206f384339a2d3049396bb2526?pvs=4", '_blank').focus();
+			else if (id == "analytics")
+				window.open("https://www.notion.so/symbolrealty/Analytics-5ea9b2edde4f4a4fb753a2d2add26e07?pvs=4", '_blank').focus();
+			else if (id == "marketing")
+				window.open("https://www.notion.so/symbolrealty/Marketing-c1bc112a8a46481ebe1a5e2c61d5358d?pvs=4", '_blank').focus();
+			else if (id == "operations")
+				window.open("https://www.notion.so/symbolrealty/Operations-9e87a19b24a7409dabc4de07b33b7dbb?pvs=4", '_blank').focus();
+			else if (id == "knowledge-hub")
+				window.open("https://www.notion.so/symbolrealty/Knowledge-Hub-baac8d9a7e56477facb20f135f4d5f78?pvs=4", '_blank').focus();
+		
+
+		}
+	</script>
+
+
+</body>
+
+</html>
