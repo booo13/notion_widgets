@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+	<!-- Font Awesome -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+
+	<!-- Google Font -->
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap" rel="stylesheet">
+
+	<!-------->
+
+	<style>
+		* {
+			margin: 0;
+			padding: 0;
+			-webkit-box-sizing: border-box;
+			box-sizing: border-box;
+		}
+
+
+		.navMenu {
+			font-family: 'Inter', sans-serif;
+			padding: 8px;
+			text-align: center;
+			margin: 7px auto;
+			width: fit-content;
+		}
+
+		.navMenu a {
+			color: #F5F5F5;
+			text-decoration: none;
+			text-transform: capitalize;
+			display: inline-block;
+			padding: 6px;
+		}
+
+		.background {
+			background-color: #FEDDAC;
+		}
+
+		.border {
+			border: 0px solid #0B0E2E;
+
+		}
+
+		.navMenu a:hover {
+
+			color: #505589;
+		}
+	</style>
+</head>
+
+<body>
+
+	<nav class="navMenu  border background">
+		<a id="home" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-house"></i></i> </a>
+		<a id="knowledge-hub" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-bookmark"></i>  Knowledge Hub </a>
+		<a id="crm" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-circle-user"></i>  CRM </a>
+    <a id="task-board" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-list"></i>  Task Board </a>
+    <a id="repository" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-file"></i>  Documents Repository </a>
+    <a id="calendar" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-calendar-days"></i>  Calendar and Events </a>
+    <a id="team" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-users"></i>  Team Directory </a>
+    
+	</nav>
+
+
+	<script>
+
+		let direction = "vertical";
+		if (direction === "vertical") {
+			document.head.insertAdjacentHTML("beforeend", `<style>.navMenu a {display: block; text-align:left; margin:7px} i{width:15px; margin-right:5px} .navMenu{margin:3px}</style>`)
+		}
+
+
+		function navigate(id) {
+
+			if (id == 'home')
+				window.open("https://www.notion.so/symbolrealty/Symbol-Realty-Dashboard-6bc96a24b85f4298be8327d2ec4b9292?pvs=4", '_blank').focus();
+			else if (id == "knowledge-hub")
+				window.open("https://www.notion.so/symbolrealty/Knowledge-Hub-baac8d9a7e56477facb20f135f4d5f78?pvs=4", '_blank').focus();
+			else if (id == "crm")
+				window.open("https://www.notion.so/symbolrealty/CRM-38178be7a1a042b89bdc6101c4b3f18d?pvs=4", '_blank').focus();
+	  	else if (id == "task-board")
+				window.open("https://www.notion.so/symbolrealty/Task-Board-14b140f2cb3a4c09b91b35da8a325ac4?pvs=4", '_blank').focus();
+      else if (id == "repository")
+				window.open("https://www.notion.so/symbolrealty/Documents-Repository-8b4e4e7683a3422dbcf1dd8610efe340?pvs=4", '_blank').focus();
+      else if (id == "calendar")
+				window.open("https://www.notion.so/symbolrealty/Calendar-and-Events-1258c0a2ac994496a2509b1f33219063?pvs=4", '_blank').focus();
+       else if (id == "team")
+				window.open("https://www.notion.so/symbolrealty/Team-Directory-bb47c07a0f3744238b9f4ec603b126fb?pvs=4", '_blank').focus();
+
+		}
+	</script>
+
+
+</body>
+
+</html>
